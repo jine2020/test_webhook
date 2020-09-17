@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 import os
-
+import pytest
 from time import sleep
 
 from selenium import webdriver
@@ -53,8 +53,8 @@ class TestDemo():
         self._driver.quit()
 
         
-    #@pytest.mark.parametrize('value', ['百度', '顺丰', '京东', '淘宝'])
-    def test_demo(self, value='京东'):
+    @pytest.mark.parametrize('value', ['百度', '顺丰', '京东', '淘宝'])
+    def test_demo(self, value):
 
         text = self._driver.find_element_by_xpath('//*[@id="1"]/h3/a[1]').text
 
