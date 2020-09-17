@@ -22,21 +22,21 @@ class TestDemo():
 
         path='/usr/local/tomcat/tomcat/webapps/chromedriver.exe'
 
-        #try:
+        try:
 
-        #    using_headless=os.environ['using_headless']
+            using_headless=os.environ['using_headless']
 
-        #except KeyError:
+        except KeyError:
 
-        #    using_headless=None
+            using_headless=None
 
-        #    print('no using_headless')
+            print('no using_headless')
 
         options=Options()
 
-        #if using_headless is not None and using_headless.lower()=='true':
+        if using_headless is not None and using_headless.lower()=='true':
 
-        #    options.add_argument('--headless')
+            options.add_argument('--headless')
 
         options.add_argument('--no-sandbox')
 
