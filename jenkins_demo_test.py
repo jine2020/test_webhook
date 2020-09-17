@@ -68,7 +68,7 @@ class TestDemo():
 
 
 
-    def test_demo1(self, value='163'):
+    def test_demo1(self, value='平安'):
 
         text = self._driver.find_element_by_xpath('//*[@id="1"]/h3/a[1]').text
 
