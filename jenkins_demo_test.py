@@ -20,7 +20,7 @@ class TestDemo():
 
         #projectpath = namepath[:namepath.find("jenkis_ui_auto\\")] + "jenkis_ui_auto\\"
 
-        path='/usr/local/tomcat/tomcat/webapps/chromedriver.exe'
+        path='/Users/lianshen/Downloads/chromedriver'
 
         try:
 
