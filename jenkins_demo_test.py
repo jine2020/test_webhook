@@ -20,8 +20,8 @@ class TestDemo():
 
         #projectpath = namepath[:namepath.find("jenkis_ui_auto\\")] + "jenkis_ui_auto\\"
 
-        path='/Users/lianshen/Downloads/chromedriver'
-
+        path='/usr/local/chromedriver'
+        
         try:
 
             using_headless=os.environ['using_headless']
