@@ -31,12 +31,12 @@ class TestDemo():
     def teardown(self):
         self._driver.quit()
 
-    @pytest.mark.parametrize('value', ['百度', '顺丰'])
-    def test_demo(self, value):
+    @pytest.mark.parametrize('value', ['天津', '上海'])
+    def test_demo1(self, value):
         #搜索pytest传参
         self.search(value)
 
-    def test_demo1(self, value='平安'):
+    def test_demo2(self, value='北京'):
         #搜索简单传参
         self.search(value)
 
