@@ -4,6 +4,7 @@ import os
 import pytest
 from time import sleep
 
+import yaml
 from selenium import webdriver
 
 from selenium.webdriver.chrome.options import Options
@@ -38,6 +39,11 @@ class TestDemo():
 
     def test_demo2(self, value='北京'):
         #搜索简单传参
+        self.search(value)
+
+    @pytest.mark.parametrize('value',yaml.safe_load(open('./data.yml',encoding='utf-8'))['value'])
+    def test_demo3(self,value):
+        #yaml传参
         self.search(value)
 
     def search(self,value):
