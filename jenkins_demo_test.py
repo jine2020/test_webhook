@@ -54,6 +54,5 @@ class TestDemo():
         self._driver.find_element_by_xpath('//*[@id="su"]').click()
         sleep(2)
 
-
 if __name__ == '__main__':
     pass
