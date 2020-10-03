@@ -14,6 +14,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 class TestDemo():
+    '''jenkins集成'''
 
     def setup(self):
         path='/usr/local/chromedriver'
