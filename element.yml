@@ -1,0 +1,12 @@
+search:
+  - By: 'xpath'
+    locator: '//*[@id="kw"]'
+    action: 'clear'
+  - By: 'xpath'
+    locator: '//*[@id="kw"]'
+    action: 'send'
+    value: '{value}'
+  - By: 'xpath'
+    locator: '//*[@id="su"]'
+    action: 'click'
+  - sleep: 2
